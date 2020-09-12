@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="ecomstyle.css" />
+  <title>Aganmi Harry Potter Unisex Hooded Sweatshirt</title>
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <img src="./imgs/amazon.png" width="110" height="35" />
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Today's Deals <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Customer Service<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Gift Crads<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Register<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+        <button class="btn btn-warning" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="row">
+      <div class="com-md-3">
+        <div class="product">
+          <div class="product-small-img">
+            <img src="./imgs/b1.jpg" onmouseover="big(this)" />
+            <img src="./imgs/b2.jpg" onmouseover="big(this)" />
+            <img src="./imgs/b3.jpg" onmouseover="big(this)" />
+            <img src="./imgs/b4.jpg" onmouseover="big(this)" />
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="img-container">
+          <img id="big-img" src="./imgs/b1.jpg" height="500px" width="400px" />
+        </div>
+      </div>
+      <div class="info">
+        <p>Aganmi Harry Potter Unisex Hooded Sweatshirt</p>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <span class="fa fa-star checked"></span>
+        <hr />
+        <h5>Price : <span>$60</span></h5>
+        <form>
+          Size :
+          <select id="size" name="size">
+            <option value="S">S</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br /><br />
+          Quantity :
+          <select name="qty">
+            <script type="text/javascript">
+              for (var i = 1; i <= 20; i++) {
+                document.write("<option value=" + i + ">");
+                document.write(i);
+                document.write("</option>");
+              }
+            </script>
+          </select>
+        </form>
+        <ul>
+          <li>62% Cotton, 24% Polyester, 13% Rayon, 1% Spandex</li>
+          <li>Imported</li>
+          <li>Machine Wash</li>
+          <li>
+            CLASSIC FIT. Constructed with comfort in mind, this women's denim
+            jacket has a classic fit and offers give where you need it while
+            still providing a classic straight fit.
+          </li>
+          <li>
+            ALL DAY COMFORT. Crafted from a premium mix of materials to create
+            a classic denim jacket with a unique feel. Guaranteed to provide
+            all day comfort while looking stylish.
+          </li>
+          <li>
+            FUNCTIONAL STYLE. Made with a polyester blend, this stretch denim
+            jacket is designed with style and function in mind. Wear it out to
+            lunch with friends or dress it up for date night, this essential
+            staple can be worn for many occasions.
+          </li>
+        </ul>
+        <input type="checkbox" name="gift" value="gift" /> Add gift options
+        <button type="button" class="btn btn-primary btn-sm">
+          <img src="./imgs/cart.png" width="20px" height="20px" />Add to cart
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+  <script type="text/javascript">
+    function big(smallImage) {
+      var fullImage = document.getElementById("big-img");
+      fullImage.src = smallImage.src;
+    }
+  </script>
+</body>
+
+</html>
